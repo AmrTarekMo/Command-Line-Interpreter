@@ -1,2 +1,2 @@
 # Command-Line-Interpreter
-CLI by java : do some commands like terminal in linux
+A Java project that simulates the terminal in Ubuntu Linux.
