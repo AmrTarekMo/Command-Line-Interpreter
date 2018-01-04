@@ -293,7 +293,7 @@ public class CommandLineInterpreter {
     }
 
     public static void main(String[] args) {
-        File cur = new File("/home/karim/");
+        File cur = new File("/home/amr/");
         Scanner sc = new Scanner(System.in);
         while(true){
             System.out.print((char)27 + "[32m"+cur.getPath()+":~$ ");
@@ -322,7 +322,7 @@ public class CommandLineInterpreter {
                 else if(command.get(0).equals("more") && command.size() > 1)more(cur , command);
                 else if(command.get(0).charAt(0) == ('?') )check( command.get(0).substring( 1,command.get(0).length() ) );
                 else if(command.get(0).equals("cd") && command.size() > 1)cur = cd(cur, command.get(1));
-                else if(command.get(0).equals("cd") && command.size() == 1)cur = new File("/home/karim/");
+                else if(command.get(0).equals("cd") && command.size() == 1)cur = new File("/home/amr/");
                 else if(command.get(0).equals("mkdir") && command.size() > 1)mkdir(cur,command);
                 else if(command.get(0).equals("rmdir") && command.size() > 1)rmdir(cur,command);
                 else if(command.get(0).equals("mv")){
